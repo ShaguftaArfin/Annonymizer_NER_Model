@@ -1,3 +1,4 @@
 streamlit
 spacy
 st-annotated-text
+streamlit_lottie
