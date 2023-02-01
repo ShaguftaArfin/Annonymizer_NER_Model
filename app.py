@@ -2,7 +2,6 @@ import spacy
 from annotated_text import annotated_text
 import requests
 import streamlit as st
-import streamlit_lottie
 from streamlit_lottie import st_lottie
 from PIL import Image
 from streamlit_option_menu import option_menu
