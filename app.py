@@ -55,7 +55,7 @@ def process_text(doc, selected_entities, anonymize=False):
 
 models = load_models()
 
-selected_language = st.sidebar.selectbox("Select a language", options=["en", "fr"])
+selected_language = st.sidebar.selectbox("Language please", options=["en", "fr"])
 selected_entities = st.sidebar.multiselect(
     "Select the entities you want to detect",
     options=["LOC", "PER", "ORG"],
@@ -77,7 +77,7 @@ tokens = process_text(doc, selected_entities)
 annotated_text(*tokens)
 
 if anonymize:
-    st.markdown("**Anonymized text**")
+    st.markdown("**Your Anonymized text**")
     st.markdown("---")
     anonymized_tokens = process_text(doc, selected_entities, anonymize=anonymize)
     annotated_text(*anonymized_tokens)
