@@ -18,7 +18,7 @@ with st.sidebar:
 #         options=["home", "Projects", "Work Experience", "Contact"])
 
 # if selected == "home":
-    st.title(f 'Welcome to NER_Anonymizer web_page ')
+    st.title(f'Welcome to NER_Anonymizer web_page ')
 
 
 @st.cache(show_spinner=False, allow_output_mutation=True, suppress_st_warning=True)
